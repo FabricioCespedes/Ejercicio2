@@ -1,0 +1,16 @@
+<div class="body">
+    <form [formGroup]="form" (ngSubmit)="ingresar()" class="body">
+        <img class="img" src="assets/imgs/Usuario.png" alt="">
+        <mat-form-field appearance="fill">
+            <mat-label>Usuario</mat-label>
+            <input matInput formControlName="usuario" >
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input matInput formControlName="password">
+        </mat-form-field>
+        <button type="submit" mat-raised-button color="accent">Accent</button>
+    </form>
+
+</div>
+
